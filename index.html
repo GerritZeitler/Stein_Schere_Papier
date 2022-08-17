@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <h1>Rock Paper Scissor</h1>
+    <section>
+        <article>
+            <p>How many games do you want to play?</p>
+            <div id="flexb">
+                <input type="radio" value="5" name="rounds" id="radio1">
+                <p>5</p>
+                <input type="radio" value="10" name="rounds" id="radio1">
+                <p>10</p>
+                <input type="radio" value="15" name="rounds" id="radio1">
+                <p>15</p>
+            </div>
+            <p id="outputRounds"></p>
+        </article>
+
+        <article id="flexb">
+            <p id="scorePlayer"></p>
+            <p>:</p>
+            <p id="scoreKi"></p>
+        </article>
+        <article>
+            <p>Let´s Play</p>
+            <p id="ergebniss"></p>
+            <div id="flexb">
+                <button onclick="check(event)" id="Stein">Stein</button>
+                <button onclick="check(event)" id="Papier">Papier</button>
+                <button onclick="check(event)" id="Schere">Schere</button>
+            </div>
+            <p>Make Your Move</p>
+            <a href="#">Restart</a>
+        </article>
+    </section>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
